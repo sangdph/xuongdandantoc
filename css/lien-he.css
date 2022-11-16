@@ -1,0 +1,242 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --text-color: rgba(61, 61, 12, 0.877);
+    --background-color-dark: rgba(233, 199, 158, 0.5);
+    --background-color-light: white;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-page{
+    width: 100%;
+    height: auto;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 120px;
+    background-color: var(--background-color-light);
+    color: rgb(0, 0, 0);
+    height: 120px;
+}
+
+.contact{
+    width: 33.33%;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.contact-content > a{
+    color: black;
+    text-decoration: none;
+}
+
+.contact .icon-contact{
+    padding: 5px 10px;
+}
+
+.logo{
+    width: 33.33%;
+}
+.logo-brand img{
+    height: 100%;
+}
+
+.search{
+    width: 33.33%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.search .group-search{
+    width: 50%;
+    display: flex;
+    padding: 10px 10px 10px 0px;
+    justify-content: flex-end;
+    font-size: 16px;
+    border-bottom: 1px solid black;
+    height: 40px;
+}
+
+.group-search > input{
+    width: 100%;
+    height: 24px;
+    border: none;
+    opacity: 0.8;
+}
+
+.group-search >input:focus{
+    outline: none;
+}
+menu{
+    width: 100%;
+    background-color: #6e3d15;
+    padding: 0px 40px;
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 1.25em;
+    flex-wrap: wrap;
+    color: var(--text-color);
+}
+
+menu a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+*
+.menu-item{
+    padding: 10px 15px;
+
+}
+
+.menu-item:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    cursor: pointer;
+}
+
+.content{
+    padding: 20px 120px;
+    width: 100%;
+    height: 600px;
+    background-color: var(--background-color-dark);
+}
+
+.content h1{
+    color: var(--text-color);
+}
+
+.content .summary{
+    margin: 20px;
+    padding-left: 30px;
+    border-left: 5px #6e3d15 solid;
+    font-size: 24px;
+}
+
+.content ul{
+    list-style-type: none;
+}
+
+.content li{
+    font-size: 18px;
+    padding: 10px;
+}
+
+footer{
+    background-color: var(--background-color-light);
+    padding: 20px 120px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    color: var(--text-color);
+    width: 100%;
+    height: 100%;
+}
+
+.logo-footer{
+    width: 80%;
+    height: 100%;
+    border-right: 2px var(--background-color-dark) solid;
+    padding-right: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-footer >img{
+    width: 100%;
+    height: auto;
+}
+
+.menu-footer{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(5,1fr);
+}
+
+.menu-footer a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.group-social{
+    background-color: #efe1be;
+    border-radius: 25px;
+    width: 240px;
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo-social-footer{
+    width: 50px;
+    height: 50px;
+    background-color: var(--background-color-dark);
+    border-radius: 50px;
+}
+
+.logo-social-footer img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.group-chat {
+    position: fixed;
+    bottom: 0px;
+    left: 20px;
+    width: 200px;
+    height: 200px;
+    z-index: 20;
+    font-size: 20px;
+    color: whitesmoke;
+  }
+  
+  .group-chat .chat-zalo {
+    display: block;
+    width: max-content;
+    padding: 8px;
+    margin: 10px;
+    border-radius: 15px;
+    background-color: rgb(142, 178, 43);
+    line-height: 1.5;
+    color: whitesmoke;
+    text-decoration: none;
+  }
+  
+  .group-chat .chat-facebook {
+    display: block;
+    width: max-content;
+    padding: 8px;
+    margin: 10px;
+    border-radius: 15px;
+    background-color: rgb(18,92,158);
+    line-height: 1.5;
+    color: whitesmoke;
+    text-decoration: none;
+  }
+  
+  .group-chat .chat-phone {
+    display: block;
+    width: max-content;
+    padding: 8px;
+    margin: 10px;
+    border-radius: 15px;
+    background-color: rgb(178, 43, 54);
+    line-height: 1.5;
+    color: whitesmoke;
+    text-decoration: none;
+  }
